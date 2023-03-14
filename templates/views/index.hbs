@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Weather</title>
+        <link rel="icon" href="/img/weather.png">
+        <link rel = "stylesheet" href="/css/styles.css">
+    </head>
+
+    <body>
+        <div class = "main-content">
+            {{>header}}
+            {{!-- <p><img class = 'logos' src='/img/location.png'>{{location}}</p>
+            <img class = 'logos' src='/img/weather.png'>{{Weather}}
+            <img class = 'logos' src='/img/temperature.png'>{{temp}}
+            <img class = 'logos' src='/img/precip.jpg'>{{precip}}
+            <img class = 'logos' src='/img/wind_dir.jpg'>{{wind_dir}} --}}
+            <form>
+                <input placeholder="Location">
+                <button>Search</button>
+            </form>
+
+            <p id = "para1"></p>
+            <p id = "para2"></p>
+        </div>
+        
+        {{>footer}}
+
+        <script src ="/js/app.js"></script>  {{!-- script is put at the end so everything in the index.js can run its course 
+                                             and then send info to app.js --}}
+    </body>
+</html>
