@@ -1,5 +1,3 @@
-console.log('Client side js file is loaded!') // This will show up on the console tab of inspect on the webpage
-
 const weatherForm = document.querySelector('form') //Select the element from the index.hbs file with which the work will be done
 const search = document.querySelector('input')
 const messageOne = document.querySelector('#para1')
