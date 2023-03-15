@@ -10,7 +10,7 @@ weatherForm.addEventListener('submit', (e) => { // 2 parameters of the addEventL
     e.preventDefault() // Used so the page doesn't refershes automatically.(Prevent the default behaviour)
     
     const location = search.value
-    const url = 'http://localhost:2000/weather?address=' + location
+    const url = '/weather?address=' + location
 
     messageOne.textContent = "Loading..."
     messageTwo.textContent = ""
