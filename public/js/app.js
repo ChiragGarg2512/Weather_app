@@ -2,7 +2,9 @@ const weatherForm = document.querySelector('form') //Select the element from the
 const search = document.querySelector('input')
 const messageOne = document.querySelector('#para1')
 const messageTwo = document.querySelector('#para2')
-
+const messageThree = document.querySelector('#para3')
+const messageFour = document.querySelector('#para4')
+const messageFive = document.querySelector('#para5')
 
 weatherForm.addEventListener('submit', (e) => { // 2 parameters of the addEventListener
                                                 // 1. string: This is the name of the event we are trying to listen to
@@ -24,7 +26,10 @@ weatherForm.addEventListener('submit', (e) => { // 2 parameters of the addEventL
             }
             else{
                 messageOne.textContent = data.location,
-                messageTwo.textContent = data.weather
+                messageTwo.textContent = data.weather[0],
+                messageThree.textContent = data.weather[1],
+                messageFour.textContent = data.weather[2],
+                messageFive.textContent = data.weather[3],
             } 
         })
     })
